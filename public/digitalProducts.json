@@ -1,0 +1,94 @@
+{
+  "digitalProducts": [
+    {
+      "id": "ai-writing-pro",
+      "name": "AI Writing Pro",
+      "icon": "Writing",
+      "badge": "Best Seller",
+      "description": "Generate high-quality content, blogs, and marketing copy in seconds with advanced AI.",
+      "price": 29,
+      "billingCycle": "Mo",
+      "features": [
+        "Unlimited AI generations",
+        "50+ writing templates",
+        "Grammar checker"
+      ],
+      "buttonText": "Buy Now"
+    },
+    {
+      "id": "design-templates-pack",
+      "name": "Design Templates Pack",
+      "icon": "Design",
+      "badge": "Popular",
+      "description": "2000+ premium templates for social media, presentations, and marketing materials.",
+      "price": 49,
+      "billingCycle": "One-Time",
+      "features": [
+        "2000+ templates",
+        "Monthly updates",
+        "Commercial license"
+      ],
+      "buttonText": "Buy Now"
+    },
+    {
+      "id": "premium-stock-assets",
+      "name": "Premium Stock Assets",
+      "icon": "Camera",
+      "badge": "New",
+      "description": "Access millions of royalty-free photos, videos, and graphics for your projects.",
+      "price": 19,
+      "billingCycle": "Mo",
+      "features": [
+        "10M+ assets",
+        "Commercial use",
+        "No attribution"
+      ],
+      "buttonText": "Buy Now"
+    },
+    {
+      "id": "automation-toolkit",
+      "name": "Automation Toolkit",
+      "icon": "Automation",
+      "badge": "Popular",
+      "description": "Automate repetitive tasks and streamline your workflow with powerful tools.",
+      "price": 79,
+      "billingCycle": "Mo",
+      "features": [
+        "50+ automations",
+        "API access",
+        "Custom workflows"
+      ],
+      "buttonText": "Buy Now"
+    },
+    {
+      "id": "resume-builder-pro",
+      "name": "Resume Builder Pro",
+      "icon": "Resume",
+      "badge": "New",
+      "description": "Create professional resumes and cover letters that land interviews.",
+      "price": 15,
+      "billingCycle": "One-Time",
+      "features": [
+        "100+ templates",
+        "ATS optimization",
+        "Export to PDF"
+      ],
+      "buttonText": "Buy Now"
+    },
+    {
+      "id": "social-media-content-kit",
+      "name": "Social Media Content Kit",
+      "icon": "Social",
+      "badge": "Best Seller",
+      "description": "Complete toolkit for creating engaging social media content across all platforms.",
+      "price": 39,
+      "billingCycle": "Mo",
+      "features": [
+        "5000+ assets",
+        "Scheduler included",
+        "Analytics dashboard"
+      ],
+      "buttonText": "Buy Now"
+    }
+  ]
+}

@@ -4,7 +4,7 @@ const PricingCard = ({ plan }) => {
     const { name, tagline, price, currency, billingCycle, isMostPopular, features, buttonText } = plan;
     return (
         <div >
-            <div className="card bg-base-100 shadow-sm rounded-2xl h-full">
+            <div className="card bg-base-100 shadow-sm rounded-2xl h-full transform transition duration-300 hover:scale-110">
                 <div className={`card-body text-left flex flex-col ${!isMostPopular ?
                     null : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"
                     } rounded-2xl h-full relative`}>
@@ -28,7 +28,7 @@ const PricingCard = ({ plan }) => {
                     </ul>
                     <div className="mt-6">
                         <button className={`btn btn-block ${isMostPopular ?
-                            "bg-[#fff]" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"
+                            "bg-white" : "bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white"
                             } rounded-full`}><span className={isMostPopular ? "bg-linear-to-r from-[#4F39F6] to-[#9514FA] bg-clip-text text-transparent" : ""}>{buttonText}</span></button>
                     </div>
                 </div>
