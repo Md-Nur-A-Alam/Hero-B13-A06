@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+
+import cart from "./../../../../assets/products/cart.png";
 
 import CartCard from './CartCard/CartCard';
 import { toast } from 'react-toastify';
+import { IoCartOutline } from 'react-icons/io5';
 
 const Carts = ({ add2Cart, setAdd2Cart }) => {
     // console.log(add2Cart);
@@ -27,8 +29,9 @@ const Carts = ({ add2Cart, setAdd2Cart }) => {
                     <button className='btn btn-block rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white' onClick={() => { setAdd2Cart([]), toast("The products are proceed to checkout successfully") }}>Proceed TO Checkout</button>
                 </div>
                 :
-                <div className='min-h-[50vh] '>
-
+                <div className='min-h-[30vh] flex flex-col justify-center items-center text-neutral/50'>
+                    <img src={cart} alt="" className='w-20' style={{ opacity: 0.3 }}/>
+                    <p>Your cart is empty</p>
                 </div>}
         </div>
     );
