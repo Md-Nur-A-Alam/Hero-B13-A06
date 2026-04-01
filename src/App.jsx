@@ -1,5 +1,5 @@
 
-import { useState } from 'react';
+import { Suspense, useState } from 'react';
 import './App.css'
 import CountsSection from './Components/CountsSection/CountsSection';
 import DigitalTools from './Components/DigitalTools/DigitalTools';
@@ -26,9 +26,12 @@ function App() {
 
         <CountsSection></CountsSection>
 
-        <DigitalTools fetchDigitalProducts={fetchDigitalProducts} add2Cart={add2Cart} setAdd2Cart={setAdd2Cart}></DigitalTools>
+        <Suspense fallback="">
 
-        <Pricing fetchPricingPlans={fetchPricingPlans}></Pricing>
+          <DigitalTools fetchDigitalProducts={fetchDigitalProducts} add2Cart={add2Cart} setAdd2Cart={setAdd2Cart}></DigitalTools>
+
+          <Pricing fetchPricingPlans={fetchPricingPlans}></Pricing>
+        </Suspense>
 
       </header>
 

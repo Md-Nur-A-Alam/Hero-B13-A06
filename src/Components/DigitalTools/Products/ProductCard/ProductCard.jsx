@@ -6,6 +6,7 @@ import shoppingCart from "./../../../../assets/products/camera.png";
 import socialMedia from "./../../../../assets/products/social-media.png";
 import writing from "./../../../../assets/products/writing_23274001.png";
 import ToastAleart from '../../../UI/ToastAleart/ToastAleart';
+import { toast } from 'react-toastify';
 
 
 const productIcons = {
@@ -18,18 +19,19 @@ const productIcons = {
 };
 
 
-const setAdd2CartBTN = ({add2Cart, setAdd2Cart,product})=>{
+const setAdd2CartBTN = ({ add2Cart, setAdd2Cart, product }) => {
     // console.log("btn clicked", add2Cart.length);
-    <ToastAleart toastMessage={" added to the cart"}></ToastAleart>
-    return setAdd2Cart([...add2Cart,product]);
-    
+    const message = <div className='flex flex-col'><p className='font-bold text-center'>{product.name} </p><p>- added to the cart</p></div>
+    toast.success(message);
+    return setAdd2Cart([...add2Cart, product]);
+
 }
 
 const ProductCard = ({ product, add2Cart, setAdd2Cart }) => {
     const { name, icon, badge, description, price, billingCycle, features, buttonText } = product;
     return (
         <div>
-            <div className="card bg-base-100 shadow-sm rounded-2xl h-full transform transition duration-300 hover:-translate-y-2">
+            <div className="card bg-base-100 shadow-sm rounded-2xl h-full transform transition duration-300 hover:-translate-y-2 hover:scale-105">
                 <div className={`card-body text-left flex flex-col rounded-2xl h-full relative`}>
                     <span className={`badge badge-xs ${(badge === 'Best Seller') ? 'badge-warning' : (badge === 'Popular') ? 'badge-primary' : 'badge-success'} absolute top-4 right-4`}>{badge}</span>
 
@@ -55,7 +57,9 @@ const ProductCard = ({ product, add2Cart, setAdd2Cart }) => {
 
                     </ul>
                     <div className="mt-6">
-                        {add2Cart.includes(product)?<button className={`btn btn-block bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full`} onClick={()=>setAdd2CartBTN({add2Cart, setAdd2Cart,product})}>{buttonText}</button>:<button className={`btn btn-block bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full`} onClick={()=>setAdd2CartBTN({add2Cart, setAdd2Cart,product})}>{buttonText}</button>}
+                        {!add2Cart.includes(product) ?
+                            <button className={`btn btn-block bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white rounded-full`} onClick={() => setAdd2CartBTN({ add2Cart, setAdd2Cart, product })}>{buttonText}</button> :
+                            <button className={`btn btn-block bg-linear-to-r from-[#0bc760] to-[#26d403] text-white rounded-full`}>Already added to the cart</button>}
                     </div>
                 </div>
             </div>

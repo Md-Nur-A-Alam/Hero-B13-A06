@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
+import CartCard from './CartCard/CartCard';
 
-const Carts = (add2Cart, setAdd2Cart) => {
+const Carts = ({ add2Cart, setAdd2Cart }) => {
+    // console.log(add2Cart);
+    const [totalPrice,setTotaPrice]=useState(0);
     return (
-        <div>
-            <h1>carts</h1>
+        <div className='rounded-2xl shadow border border-neutral/5 my-20 p-10'>
+            <h1 className='text-xl text-left font-bold mb-10'>Your Cart</h1>
+            {(add2Cart.length) ?
+                <div>
+                    <div className='grid grid-cols-1 gap-2'>
+                        {add2Cart.map(item => <CartCard key={item.id} add2Cart={add2Cart} setAdd2Cart={setAdd2Cart}></CartCard>)}
+                    </div>
+                    <div className='mt-5 flex justify-between my-3'>
+                        <p className='text-neutral/50'>Total:</p>
+                        <p className='text-xl font-bold'>${totalPrice}</p>
+                    </div>
+                    <button className='btn btn-block rounded-full bg-linear-to-r from-[#4F39F6] to-[#9514FA] text-white'>Proceed TO Checkout</button>
+                </div>
+                :
+                <div className='min-h-[50vh] '>cart is empty</div>}
         </div>
     );
 };
