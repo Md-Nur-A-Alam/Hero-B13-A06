@@ -1,161 +1,39 @@
-# 🎯 A-6 Digital Tools Buying Website
+# 🛠️ DigiTools Platform
 
-## 📅 Deadlines
-- 60 Marks: 1st April, 2026 (11:59 PM ⏱️)  
-- 50 Marks: No Deadline for 50 marks.  
-- 30 Marks: Any time after 1st April.  
 
----
+## About The Project
 
----
+DigiTools is a simple and modern website where you can look at different digital products. It is built using React.js, which makes it fast and easy to use.
 
-## 🚫 Key Rules
-- Don't ask about mark distribution in the group. We don't provide it.  
-- Don't post assignment feedback after you receive it. If you face any problem or have any complaints then join a support session and discuss it.  
-- Don’t use any lorem ipsum text, rather use relevant and meaningful text content.  
-- You can change the color if you want but remember that it should not be a gobindo color.  
-- Use at least 8 git commits with meaningful messages.  
+We used Tailwind CSS and DaisyUI to make the website look professional and work perfectly on both phones and computers. The app shows information from a local file, so it loads quickly. It also has cool features like pop-up messages (toast notifications) when you do something, smooth animations, and nice icons to help you navigate.
+
+**Live Demo**: [mdnuralamphb13a06.netlify.app](https://mdnuralamphb13a06.netlify.app/)
 
 ---
 
-## 🧩 Features & Requirements
+## ✨ Key Features
 
-### 🧭 Navbar
-- Navbar designed according to Figma  
-- Cart icon displayed (initially empty)  
+### Dynamic Product Options
+Browse a rich product listing powered by JSON data with clean card-based UI, filter support, and real-time interactions.
 
----
+### Toast Notification System
+Instant, elegant feedback for user actions like adding items to cart — powered by React-Toastify for a polished UX.
 
-### 🎯 Banner
-- Banner section includes:
-  - Heading  
-  - Description text  
-  - Image  
-  - Buttons  
+### Fully Responsive Design
+Pixel-perfect layout across all screen sizes using Tailwind CSS utility classes and DaisyUI's accessible component library.
 
 ---
 
-### 📊 Stats Section
-- Stats section designed based on Figma  
+## 🧰 Tech Stack
 
----
+| Technology | Purpose |
+| :--- | :--- |
+| **React.js** | Component-based UI framework |
+| **Tailwind CSS** | Utility-first CSS styling |
+| **DaisyUI** | Pre-built accessible UI components |
+| **JavaScript (ES6+)** | Core application logic |
+| **React-Toastify** | Toast notification system |
+| **JSON** | Static product data layer |
+| **React Icons** | Icon library |
+| **React Awesome Components** | Enhanced UI components |
 
-### 🔄 Main Section & Toggling
-- Design  2 buttons at the center of the section.
-- By clicking Cart,  the cart section will be shown. By default it will show an empty message.
-- By Clicking  Product,  the Products section will be shown. 
-- By Default product section will be visible. 
-
-
----
-
-### 📦 JSON Data
-Create 6–10 product data with:
-- id  
-- name  
-- description  
-- price  
-- period (one-time / monthly / yearly)  
-- tag ( example- popular, new, best seller) 
-- tagType ( example- popular, new, best seller) 
-- features ( array. Example:  ["100+ templates", "ATS optimization", "Export to PDF"] )   
-- icon  
-
-🚩 You can take help of AI Systems for generating a JSON Data
-
----
-
-### 🃏 Product Cards
-- Display all products in a 3-column layout  
-- Each card includes:
-  - Name  
-  - Description  
-  - Price  
-  - Period  
-  - TagType  
-  - Features  
-  - Icon  
-  - Buy Now button  
-
----
-
-### 🛒 Cart Functionality
-- Show selected products in cart  
-- Display total product count in navbar  
-- Cart layout: 1 column  
-- Each cart item includes:
-  - Name  
-  - Icon  
-  - Price  
-  - Remove button  
-- "Proceed to Checkout" button:
-  - Clears all cart items  
-
----
-
-### 🪜 Steps Section
-- Designed according to Figma  
-
----
-
-### 💰 Pricing Section
-- Designed according to Figma  
-
----
-
-### 🦶 Footer
-- Footer designed based on Figma  
-
----
-
-### 📱 Responsive Design
-- Fully responsive across devices  
-- Follow standard responsive practices  
-
----
-
-# 🚀 Challenges Part 
-
-### 🔔 Use a NPM Package React-Toastify
-- Use react toastify to show all the alerts of add to cart, remove, and proceed to checkout. 
-
-
----
-
-### ❌ Implement Selected product remove functionality 
-- On Click Remove Button product will remove from cart section.
-
-- In this section the total of the selected products ( added on the carts) will show here. 
-- Proceed to checkout button will remove all the products from the cart  
-
-
-
----
-
-### 📂 GitHub Repository
-- Create Beautiful Github Readme with following description
-    - Name of your  Project
-    - A little Description
-    - Technology that you use
-    - 3 Features about your project. 
- 
-
----
-## Optional Features: 
-
-1. When you click on a product it increases the cart count in the Navbar and clears it when you click on the proceed to checkout button. 
-2. When clicking on the Buy now Button it shows an “Added to cart” message on the button. 
-
-
-## ⚙️ Technologies Used
-- React.js  
-- Tailwind CSS, DaisyUI 
-- JavaScript (ES6+)  
-- React-Toastify (NPM Package)  
-- JSON (for product data)  
-
----
-
-## 📤 What to submit:
-- GitHub Repository Link:
-- Live Site Link:
