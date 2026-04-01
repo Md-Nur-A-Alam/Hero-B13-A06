@@ -6,9 +6,8 @@ import NavBar from './Components/NavBar/NavBar';
 import Pricing from './Components/Pricing/Pricing';
 import ToastAleart from './Components/ToastAleart/ToastAleart';
 
-const pricingPlans = () =>{
-  return fetch(pricingPlans.json).then(res => res.json());
-}
+const fetchPricingPlans = fetch('./pricingPlans.json').then(res => res.json());
+
 
 function App() {
   return (
@@ -23,7 +22,7 @@ function App() {
 
 
 
-        <Pricing pricingPlans={pricingPlans}></Pricing>
+        <Pricing fetchPricingPlans={fetchPricingPlans}></Pricing>
 
       </header>
 

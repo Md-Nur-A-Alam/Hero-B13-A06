@@ -2,8 +2,8 @@ import React from 'react';
 
 const NavBar = () => {
     return (
-        <div>
-            <div className="navbar bg-base-100 shadow-sm sticky top-0 w-full">
+        <div className='sticky top-0 z-10 '>
+            <div className="navbar shadow-sm w-full bg-white/20 backdrop-blur-xl">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost md:hidden">

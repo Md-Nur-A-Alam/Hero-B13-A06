@@ -12,7 +12,7 @@ const HeroSection = () => {
                         className="max-w-sm rounded-lg shadow-2xl"
                     />
                     <div>
-                        <p className='bg-[#E1E7FF] p-1  rounded-full flex gap-1 items-center w-fit'><div><img src={liveIMG} alt="" /></div> New: AI-Powered Tools Available</p>
+                        <div className='bg-[#E1E7FF] p-1  rounded-full flex items-center w-fit px-4 my-1'><div className='pr-2'><img src={liveIMG} alt="" /></div> New: AI-Powered Tools Available</div>
                         <h1 className="text-5xl font-bold">Supercharge Your<br></br>Digital Workflow</h1>
                         <p className="py-6 text-neutral/50">
                             Access premium AI tools, design assets, templates, and productivity
