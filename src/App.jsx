@@ -9,6 +9,7 @@ import Pricing from './Components/Pricing/Pricing';
 import ToastAleart from './Components/UI/ToastAleart/ToastAleart';
 import StepsSection from './Components/StepsSection/StepsSection';
 import Footer from './Components/UI/Footer/Footer';
+import WorkFLow from './Components/WorkFLow/WorkFLow';
 
 const fetchPricingPlans = fetch('./pricingPlans.json').then(res => res.json());
 const fetchDigitalProducts = fetch('./digitalProducts.json').then(res => res.json());
@@ -26,6 +27,9 @@ function App() {
 
         <HeroSection></HeroSection>
 
+      </header>
+
+      <main>
         <CountsSection></CountsSection>
 
 
@@ -45,10 +49,7 @@ function App() {
 
         </Suspense>
 
-      </header>
-
-      <main>
-
+        <WorkFLow></WorkFLow>
       </main>
 
       <footer>
